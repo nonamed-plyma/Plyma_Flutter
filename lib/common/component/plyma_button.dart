@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:plyma/common/component/plyma_text_style.dart';
 import 'package:plyma/common/const/plyma_colors.dart';
 
-class LoginButton extends StatelessWidget{
-  final VoidCallback onTap;
+class LoginButton extends StatelessWidget {
+  final GestureTapCallback onTap;
   final double? width, height;
   final String text;
 
@@ -13,10 +14,10 @@ class LoginButton extends StatelessWidget{
     required this.text,
     this.width,
     this.height,
-});
+  });
 
   @override
-  Widget build (BuildContext context) {
+  Widget build(BuildContext context) {
     // final mediaQuery = MediaQuery.of(context);
     // final width = mediaQuery.size.width * 0.8;
     // final height = mediaQuery.size.height * 0.07;
@@ -33,13 +34,9 @@ class LoginButton extends StatelessWidget{
         ),
         child: Text(
           text,
-          style: TextStyle(
-            color: PlymaColors.white,
-            fontSize: 20,
-          ),
+          style: PlymaTextStyle().button(color: PlymaColors.azureBlue),
         ),
       ),
     );
   }
 }
-
