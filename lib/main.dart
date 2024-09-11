@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:plyma/common/component/plyma_button.dart';
 import 'package:plyma/common/component/plyma_text_style.dart';
 import 'package:plyma/common/const/plyma_colors.dart';
+import 'package:plyma/view/join.dart';
+import 'package:plyma/view/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,9 +48,37 @@ class OnBoardingScreen extends StatelessWidget {
                   style: textStyle.loading(color: PlymaColors.gray600),
                 ),
                 const SizedBox(height: 80),
-                LoginButton(onTap: () {}, text: '로그인'),
+                LoginButton(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return const Scaffold(
+                              body: Center(
+                                child: LoginScreen(),
+                              ),
+                            );
+                          },
+                        ),
+                      );
+                    },
+                    text: '로그인'),
                 const SizedBox(height: 10),
-                LoginButton(onTap: () {}, text: '회원가입'),
+                LoginButton(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return const Scaffold(
+                              body: Center(
+                                child: JoinScreen(),
+                              ),
+                            );
+                          },
+                        ),
+                      );
+                    },
+                    text: '회원가입'),
               ],
             ),
           ),
