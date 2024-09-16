@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: TeacherLoginScreen(),
     );
   }
 }
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({
+class TeacherLoginScreen extends StatelessWidget {
+  const TeacherLoginScreen({
     super.key,
   });
 
@@ -54,7 +54,7 @@ class LoginScreen extends StatelessWidget {
                       width: 71,
                     ),
                     const SizedBox(height: 50),
-                    const CustomTextField(hinttext: '학번을 입력해주세요 (4글자)'),
+                    const CustomTextField(hinttext: '이름을 입력해주세요 (1~4자)'),
                     const SizedBox(height: 10),
                     const CustomTextField(hinttext: '비밀번호를 입력하세요 (4~18자)'),
                     const SizedBox(height: 40),
