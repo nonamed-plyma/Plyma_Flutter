@@ -53,11 +53,19 @@ class LoginScreen extends StatelessWidget {
                       height: 59,
                       width: 71,
                     ),
+<<<<<<< Updated upstream
                     const SizedBox(height: 50),
                     const CustomTextField(hinttext: '학번을 입력해주세요 (4글자)'),
                     const SizedBox(height: 10),
                     const CustomTextField(hinttext: '비밀번호를 입력하세요 (4~18자)'),
                     const SizedBox(height: 40),
+=======
+                    const SizedBox(height: 30),
+                    const CustomTextField(hintText: '학번을 입력해주세요 (4글자)'),
+                    const SizedBox(height: 10),
+                    const CustomTextField(hintText: '비밀번호를 입력하세요 (4~18글자)'),
+                    const SizedBox(height: 50),
+>>>>>>> Stashed changes
                     LoginButton(onTap: () {}, text: '로그인'),
                   ],
                 ),

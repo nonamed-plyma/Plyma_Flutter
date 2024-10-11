@@ -51,13 +51,23 @@ class JoinScreen extends StatelessWidget {
                         height: 59,
                         width: 71,
                       ),
+<<<<<<< Updated upstream
                       const SizedBox(height: 50),
                       const CustomTextField(hinttext: '이름을 입력해주세요 (1~4자)'),
+=======
+                      const SizedBox(height: 30),
+                      const CustomTextField(hintText: '이름을 입력해주세요 (1~4자)'),
+>>>>>>> Stashed changes
                       const SizedBox(height: 10),
-                      const CustomTextField(hinttext: '학번을 입력해주세요(4글자)'),
+                      const CustomTextField(hintText: '학번을 입력해주세요(4글자)'),
                       const SizedBox(height: 10),
+<<<<<<< Updated upstream
                       const CustomTextField(hinttext: '비밀번호를 입력하세요(1~8자)'),
                       const SizedBox(height: 40),
+=======
+                      const CustomTextField(hintText: '비밀번호를 입력하세요(1~8자)'),
+                      const SizedBox(height: 50),
+>>>>>>> Stashed changes
                       LoginButton(onTap: () {}, text: '회원가입'),
                     ],
                   ),
