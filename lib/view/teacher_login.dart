@@ -3,10 +3,6 @@ import 'package:plyma/common/component/plyma_button.dart';
 import 'package:plyma/common/component/plyma_login.dart';
 import 'package:plyma/common/const/plyma_colors.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -54,9 +50,9 @@ class TeacherLoginScreen extends StatelessWidget {
                       width: 71,
                     ),
                     const SizedBox(height: 50),
-                    const CustomTextField(hinttext: '이름을 입력해주세요 (1~4자)'),
+                    const CustomTextField(hintText: '이름을 입력해주세요 (1~4자)'),
                     const SizedBox(height: 10),
-                    const CustomTextField(hinttext: '비밀번호를 입력하세요 (4~18자)'),
+                    const CustomTextField(hintText: '비밀번호를 입력하세요 (4~18자)'),
                     const SizedBox(height: 40),
                     LoginButton(onTap: () {}, text: '로그인'),
                   ],
