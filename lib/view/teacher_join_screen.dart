@@ -3,18 +3,6 @@ import 'package:plyma/common/component/plyma_button.dart';
 import 'package:plyma/common/component/plyma_login.dart';
 import 'package:plyma/common/const/plyma_colors.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: TeacherJoinScreen(),
-    );
-  }
-}
-
 class TeacherJoinScreen extends StatelessWidget {
   const TeacherJoinScreen({super.key});
 
