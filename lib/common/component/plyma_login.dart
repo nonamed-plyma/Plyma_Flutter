@@ -3,11 +3,11 @@ import 'package:plyma/common/component/plyma_text_style.dart';
 import 'package:plyma/common/const/plyma_colors.dart';
 
 class CustomTextField extends StatefulWidget {
-  final String hinttext;
+  final String hintText;
 
   const CustomTextField({
     super.key,
-    required this.hinttext,
+    required this.hintText,
   });
 
   @override
@@ -25,7 +25,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return TextField(
       style: textstyle.join(color: PlymaColors.gray300),
       decoration: InputDecoration(
-        hintText: widget.hinttext,
+        hintText: widget.hintText,
         hintStyle: TextStyle(
           color: PlymaColors.gray300,
         ),

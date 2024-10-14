@@ -40,7 +40,7 @@ class PlymaTextStyle {
   }
   TextStyle header ({required Color color}) {
     return TextStyle(
-      color: PlymaColors.black,
+      color: PlymaColors.azureBlue,
       fontSize: 16,
       fontFamily: 'Inter',
       fontWeight: FontWeight.w600,
