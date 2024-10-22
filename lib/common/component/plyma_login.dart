@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:plyma/common/component/plyma_text_style.dart';
 import 'package:plyma/common/const/plyma_colors.dart';
 
 class CustomTextField extends StatefulWidget {
   final String hintText;
+  final bool password;
+  final TextEditingController? controller;
 
   const CustomTextField({
     super.key,
     required this.hintText,
+    this.password = false,
+    this.controller,
   });
 
   @override
@@ -23,7 +28,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
     borderSide: BorderSide(color: PlymaColors.gray300),
     );
     return TextField(
-      style: textstyle.join(color: PlymaColors.gray300),
+      controller: widget.controller,
+      style: textstyle.join(color: PlymaColors.black),
       decoration: InputDecoration(
         hintText: widget.hintText,
         hintStyle: TextStyle(
@@ -35,7 +41,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
         errorBorder: border,
         focusedErrorBorder: border,
       ),
+      obscureText: widget.password,
+      keyboardType: TextInputType.text,
     );
   }
 }
-
