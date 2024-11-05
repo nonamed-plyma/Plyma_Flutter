@@ -5,6 +5,7 @@ import 'package:plyma/common/component/plyma_appbar.dart';
 import 'package:plyma/common/widget/header_container.dart';
 import 'package:plyma/common/widget/post_listview.dart';
 import 'package:plyma/common/widget/search_field.dart';
+import 'package:plyma/view/post_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -40,7 +41,12 @@ class _MainScreenState extends State<MainScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: PlymaColors.azureBlue,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const PostScreen()),
+          );
+        },
         child: const Icon(
           Icons.add,
           color: Colors.white,
