@@ -48,7 +48,6 @@ class PostListview extends StatelessWidget {
                     ),
                   ),
                   const Text('5'),
-                  const SizedBox(width: 8),
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(
@@ -57,6 +56,12 @@ class PostListview extends StatelessWidget {
                     ),
                   ),
                   const Text('5'),
+                  IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                          Icons.more_vert_rounded,
+                      ),
+                  ),
                 ],
               ),
               onTap: () {},
