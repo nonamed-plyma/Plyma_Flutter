@@ -4,12 +4,30 @@ import 'package:plyma/common/component/studentMypage_post_view.dart';
 import 'package:plyma/common/const/plyma_colors.dart';
 import 'package:plyma/view/main_screen.dart';
 
-class StudentmypageScreen extends StatelessWidget {
+class StudentmypageScreen extends StatefulWidget {
   const StudentmypageScreen({super.key});
 
   @override
+  State<StudentmypageScreen> createState() => _StudentmypageScreenState();
+}
+
+class _StudentmypageScreenState extends State<StudentmypageScreen> {
+  late PageController pageController;
+
+  @override
+  void initState() {
+    super.initState();
+    pageController = PageController();
+  }
+
+  @override
+  void dispose() {
+    pageController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final PageController pageController = PageController();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: PlymaColors.white,
