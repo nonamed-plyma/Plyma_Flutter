@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:plyma/common/component/studentMypage_heart_view.dart';
-import 'package:plyma/common/component/studentMypage_post_view.dart';
+import 'package:plyma/common/component/teacherMypage_heart_view.dart';
+import 'package:plyma/common/component/teacherMypage_post_view.dart';
 import 'package:plyma/common/const/plyma_colors.dart';
 import 'package:plyma/view/main_screen.dart';
 
-class StudentmypageScreen extends StatefulWidget {
-  const StudentmypageScreen({super.key});
+class TeachermypageScreen extends StatefulWidget {
+  const TeachermypageScreen({super.key});
 
   @override
-  State<StudentmypageScreen> createState() => _StudentmypageScreenState();
+  State<TeachermypageScreen> createState() => _TeachermypageScreenState();
 }
 
-class _StudentmypageScreenState extends State<StudentmypageScreen> {
+class _TeachermypageScreenState extends State<TeachermypageScreen> {
   late PageController pageController;
 
   @override
@@ -45,8 +45,8 @@ class _StudentmypageScreenState extends State<StudentmypageScreen> {
       body: PageView(
         controller: pageController,
         children: const [
-          StudentMypagePostScreen(),
-          StudentmypageHeartScreen(),
+          TeachermypagePostScreen(),
+          TeachermypageHeartScreen(),
         ],
       ),
     );

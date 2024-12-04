@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:plyma/common/component/delete.dart';
+import 'package:plyma/common/component/edit.dart';
 import 'package:plyma/common/component/plyma_text_style.dart';
 import 'package:plyma/common/const/plyma_colors.dart';
 
@@ -10,9 +12,9 @@ class EditDelete extends StatelessWidget {
     return PopupMenuButton<String>(
       onSelected: (value) {
         if (value == 'edit') {
-          // Edit action
+          showDialog(context: context, builder: (context) => const Edit());
         } else if (value == 'delete') {
-          // Delete action
+          showDialog(context: context, builder: (context) => const Delete());
         }
       },
       itemBuilder: (context) => [
