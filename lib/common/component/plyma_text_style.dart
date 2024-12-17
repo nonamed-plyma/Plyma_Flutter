@@ -40,6 +40,15 @@ class PlymaTextStyle {
   }
   TextStyle header ({required Color color}) {
     return TextStyle(
+      color: PlymaColors.azureBlue,
+      fontSize: 16,
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w600,
+      overflow: TextOverflow.ellipsis,
+    );
+  }
+  TextStyle mypageHeader ({required Color color}) {
+    return TextStyle(
       color: PlymaColors.black,
       fontSize: 16,
       fontFamily: 'Inter',
